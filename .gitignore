@@ -1,0 +1,38 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Kaggle evaluation (don't commit)
+kaggle_evaluation/
+data/
+artifacts/
+
+# Model & Data Files
+*.joblib
+*.pkl
+*.pickle
+*.parquet
+*.csv
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

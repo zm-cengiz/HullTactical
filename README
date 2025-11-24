@@ -1,0 +1,25 @@
+# Hull Tactical - Market Prediction (Python 3.11.13)
+
+CS 53744 Machine Learning Project - S&P 500 Return Prediction
+
+## Project Overview
+This project predicts daily excess returns of the S&P 500 using machine learning and develops a trading strategy with a 120% volatility constraint.
+
+### Prerequisites
+- Python Python 3.11.13+
+- Git
+
+### Installation
+1. Clone the repository
+2. Create a virtual environment: `python -m venv venv`
+3. Activate it: `source venv/bin/activate` (or `venv\Scripts\activate` on Windows)
+4. Install dependencies: `pip install -r requirements.txt`
+
+### Data
+Download data from [Kaggle Competition](https://www.kaggle.com/competitions/hull-tactical-market-prediction/overview)
+
+## Project Structure
+- `notebooks/` - Jupyter notebooks for experimentation
+- `data/` - Raw and processed datasets
+- `results/` - Predictions and evaluation plots
+
