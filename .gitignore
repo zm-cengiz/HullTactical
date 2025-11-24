@@ -8,11 +8,8 @@ env/
 kaggle_evaluation/
 
 # Model & Data Files
-*.joblib
 *.pkl
 *.pickle
-*.parquet
-*.csv
 
 # Jupyter
 .ipynb_checkpoints/
