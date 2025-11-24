@@ -6,8 +6,6 @@ env/
 
 # Kaggle evaluation (don't commit)
 kaggle_evaluation/
-data/
-artifacts/
 
 # Model & Data Files
 *.joblib
