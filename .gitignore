@@ -1,3 +1,26 @@
+# Virtual environments
+.venv/
+.venv-tf/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data, artifacts and results (do not commit large model files or datasets)
+artifacts/
+results/
+data/
+
+# OS files
+.DS_Store
+
+# Editor settings
+.vscode/
 # Virtual Environment
 .venv/
 venv/
