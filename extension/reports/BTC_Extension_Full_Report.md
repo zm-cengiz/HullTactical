@@ -3,7 +3,7 @@
 **Project:** Cross-Market Crypto Extension using LSTM Neural Networks  
 **Asset:** Bitcoin (BTC-USD)  
 **Date:** December 4, 2025  
-**Author:** Hull Tactical Asset Allocation Team
+**Author:** Zehra Marziya Cengiz, Elias Saker, Erik Paperniuk (Team 13)
 
 ---
 
@@ -474,16 +474,5 @@ pip install -r requirements.txt
 jupyter notebook notebooks/01_btc_crypto_extension.ipynb
 # Run all cells in order
 ```
-
-**Random Seeds:**
-- NumPy: 42
-- PyTorch: 42
-
-**Hardware Used:**
-- Apple M1 Max
-- 32GB RAM
-- MPS (Metal Performance Shaders) acceleration
-
 ---
 
-*Report generated: December 4, 2025*
