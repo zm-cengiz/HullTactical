@@ -1,0 +1,22 @@
+# BTC Crypto Extension - Requirements
+# Python 3.8+ recommended
+
+# Data handling
+pandas>=1.5.0
+numpy>=1.21.0
+
+# Data source
+yfinance>=0.2.0
+
+# Machine Learning - PyTorch
+torch>=2.0.0
+
+# Optional: scikit-learn for utilities
+scikit-learn>=1.0.0
+
+# Visualization
+matplotlib>=3.5.0
+
+# Jupyter support
+jupyter>=1.0.0
+ipykernel>=6.0.0
