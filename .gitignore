@@ -12,9 +12,14 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Data, artifacts and results (do not commit large model files or datasets)
-artifacts/
-results/
-data/
+artifacts/*
+!artifacts/.gitkeep
+
+results/*
+!results/.gitkeep
+
+data/*
+!data/.gitkeep
 
 # OS files
 .DS_Store

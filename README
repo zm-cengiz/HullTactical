@@ -17,6 +17,7 @@ This project predicts daily excess returns of the S&P 500 using machine learning
 
 ### Data
 Download data from [Kaggle Competition](https://www.kaggle.com/competitions/hull-tactical-market-prediction/overview)
+and put them in the data folder as train.csv and test.csv
 
 ## Project Structure
 - `notebooks/` - Jupyter notebooks for experimentation
