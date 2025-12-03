@@ -23,4 +23,74 @@ and put them in the data folder as train.csv and test.csv
 - `notebooks/` - Jupyter notebooks for experimentation
 - `data/` - Raw and processed datasets
 - `results/` - Predictions and evaluation plots
+- `artifacts/` - Built to contain eventual saved models
 
+
+
+---
+
+## 📊 Notebooks & Modeling Summary
+
+### **EDA & Feature Selection**
+Explores:
+- distribution of forward and excess returns  
+- missing value patterns  
+- outlier detection  
+- time-varying correlation analysis  
+- early baseline models for intuition  
+
+Select features by techniques that include:
+- mutual information ranking  
+- rolling correlation stability  
+- LightGBM importance  
+- category-balanced selection (E, S, V, M, I, P groups)
+
+Final result: **20 high-signal market features** (available in 2 versions quota/no-quota).
+
+---
+
+### **Step 1 — Baseline Modeling**
+Initial benchmark including:
+- simple lag features  
+- logistic/linear baselines  
+- first evaluation using the custom Kaggle metric  
+
+---
+
+### **Step 2 — Model Development**
+
+This step explores different learning algorithms for forecasting excess returns and building allocation signals:
+
+- experiments with Random Forest, LightGBM, and LSTM
+- uses time-series (walk-forward) cross-validation to avoid leakage
+- predicts allocation weights between 0 and 2 from return forecasts
+- enforces the 120% volatility constraint during mapping and evaluation
+
+---
+
+### **Step 3 and 5 — Feature Engineering & Modeling**
+This notebook builds our final and best performing predictive model using:
+
+#### Feature Engineering
+- Lags: **1, 3, 5 days**  
+- Rolling windows: **5-day & 10-day means and volatilities**  
+- Short-term momentum indicators  
+- Non-leaky rolling implementation using only past data  
+
+#### Model
+- **LightGBM (GBDT)**  
+- Time-series cross-validation (walk-forward)  
+- Hyperparameter search around best performing config  
+- Mapping predictions → portfolio allocations in `[0, 2]`  
+
+---
+
+### **Step 4 — Backtesting & Evaluation**
+Includes a deeper evaluation of our best model (step 3/5):
+- cumulative excess return curves  
+- volatility ratio vs market  
+- drawdown analysis  
+- comparison with S&P 500 baseline  
+- interpretation of volatility penalties in the metric  
+
+---
