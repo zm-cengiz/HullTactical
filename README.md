@@ -24,7 +24,7 @@ and put them in the data folder as train.csv and test.csv
 - `data/` - Raw and processed datasets
 - `results/` - Predictions and evaluation plots
 - `artifacts/` - Built to contain eventual saved models
-
+- `extension/` - Contains the bonus work for the project (extension on the Bitcoin market)
 
 
 ---
