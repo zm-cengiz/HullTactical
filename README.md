@@ -1,6 +1,6 @@
 # Hull Tactical - Market Prediction (Python 3.11.13)
 
-CS 53744 Machine Learning Project - S&P 500 Return Prediction
+Machine Learning Project - S&P 500 Return Prediction
 
 ## Project Overview
 This project predicts daily excess returns of the S&P 500 using machine learning and develops a trading strategy with a 120% volatility constraint.
